@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :heros, only: [:index]
-  resources :powers, only: [:index, :show]
+  resources :powers, only: [:index, :show, :update]
 end
