@@ -1,7 +1,7 @@
 class Power < ApplicationRecord
   validates :description, presence: true
-  validates :description, length: { mnimum: 20 }
+  validates :description, length: { minimum: 20 }
 
-  belongs_to :powers
-  has_many :heros, through: :powers
+  has_many :heropowers
+  has_many :heros, through: :heropowers
 end
