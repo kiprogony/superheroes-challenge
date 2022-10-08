@@ -1,8 +1,8 @@
 class PowersController < ApplicationController
 
   def index
-    powers = Power.all
-    render json: powers
+    power = Power.all
+    render json: power
   end
 
   def show
@@ -17,8 +17,8 @@ class PowersController < ApplicationController
   def update
     power = Power.find_by(id: params[:id])
     if power
-      power.update(power_params)
-      render json: bird
+      power.update!(power_params)
+      render json: power
     else
       render json: { error: "Power not found" }, status: :not_found
     end
