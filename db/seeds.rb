@@ -18,3 +18,9 @@ Power.create(name: "Superstrength", description: "gives the wielder super-human 
 Power.create(name: "Flight", description: "gives the wielder the ability to fly through the skies at supersonic speed")
 Power.create(name: "Stamina and Agility", description: "ability to react faster than a normal human and to possess greater flexibility and with higher/farther jumping capacity")
 Power.create(name: "Superhuman strength", description: "The power to possess a level of strength drastically beyond what is naturally possible.")
+
+HeroPower.create(strength: "strong", power_id: "1", hero_id: "2")
+HeroPower.create(strength: "weak", power_id: "2", hero_id: "1")
+HeroPower.create(strength: "weak", power_id: "3", hero_id: "3")
+HeroPower.create(strength: "average", power_id: "3", hero_id: "4")
+HeroPower.create(strength: "strong", power_id: "5", hero_id: "5")
